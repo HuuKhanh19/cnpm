@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/quanlychungcu?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/indentity_service?createDatabaseIfNotExist=true
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -14,3 +14,6 @@ spring:
         format_sql: true
     open-in-view: false
     database-platform: org.hibernate.dialect.MySQL8Dialect
+
+jwt:
+  signerKey: "1pKbYGcc25alTka23GrEKMndWX/fR2ryrnBGcE0dl9k3PH15liBXkk/N3qkcSw8m"
