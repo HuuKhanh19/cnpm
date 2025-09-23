@@ -51,7 +51,7 @@ public class UserService {
         String name = context.getAuthentication().getName();
 
         User user = userRepository.findByUsername(name).orElseThrow(
-                () -> new AppException(ErrorCode.USER_NOTEXISTED));
+                () -> new AppException(ErrorCode.USER_NOT_EXISTED));
 
         return userMapper.toUserResponse(user);
     }
